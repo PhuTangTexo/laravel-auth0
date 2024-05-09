@@ -50,7 +50,7 @@ interface UserContract extends Authenticatable, JsonSerializable
      *
      * @return mixed
      */
-    public function getAttribute(string $key, mixed $default = null);
+    public function getAttribute($key);
 
     /**
      * Set a given attribute on the model.
@@ -60,5 +60,5 @@ interface UserContract extends Authenticatable, JsonSerializable
      *
      * @return $this
      */
-    public function setAttribute(string $key, mixed $value);
+    public function setAttribute($key, $value);
 }
