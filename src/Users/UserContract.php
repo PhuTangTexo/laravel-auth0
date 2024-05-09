@@ -37,8 +37,10 @@ interface UserContract extends Authenticatable, JsonSerializable
      * Fill the model with an array of attributes.
      *
      * @param array $attributes
+     *
+     * @return $this
      */
-    public function fill(array $attributes): self;
+    public function fill(array $attributes);
 
     /**
      * Get an attribute from the model.
