@@ -18,8 +18,10 @@ interface UserContract extends Authenticatable, JsonSerializable
      * Dynamically retrieve attributes on the model.
      *
      * @param string $key
+     *
+     * @return mixed
      */
-    public function __get($key): mixed;
+    public function __get($key);
 
     /**
      * Dynamically set attributes on the model.
