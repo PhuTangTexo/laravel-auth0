@@ -28,8 +28,10 @@ interface UserContract extends Authenticatable, JsonSerializable
      *
      * @param mixed  $value
      * @param string $key
+     *
+     * @return void
      */
-    public function __set(string $key, mixed $value): void;
+    public function __set($key, $value);
 
     /**
      * Fill the model with an array of attributes.
